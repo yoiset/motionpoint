@@ -2,6 +2,9 @@ package com.yoiset.motionpoint;
 
 import java.util.List;
 
+import org.junit.BeforeClass;
+import org.junit.Test;
+
 import com.yoiset.motionpoint.domain.Animal;
 
 import junit.framework.TestCase;
@@ -24,7 +27,7 @@ public class AppTest extends TestCase
         super( testName );
     }
     
-    
+    @BeforeClass
     public void init(){
     	
     }
@@ -33,6 +36,7 @@ public class AppTest extends TestCase
     /**
      * Rigourous Test :-)
      */
+    @Test
     public void testApp()
     {
         assertTrue( true );
