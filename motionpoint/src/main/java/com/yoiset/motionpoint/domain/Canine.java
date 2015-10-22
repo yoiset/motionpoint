@@ -18,8 +18,10 @@ public class Canine extends Mammal implements Communicator {
 	 * @see com.yoiset.motionpoint.domain.Mammal#jump()
 	 */
 	@Override
-	public void jump() {
-		System.out.println("Dog is jumping...");
+	public String jump() {
+		String value="Dog is jumping...";
+		System.out.println(value);
+		return value;
 
 	}
 
@@ -28,16 +30,17 @@ public class Canine extends Mammal implements Communicator {
 	 * @see com.yoiset.motionpoint.domain.Animal#move()
 	 */
 	@Override
-	public void move() {
-		walk();
-
+	public String move() {
+		return walk();
 	}
 
 	/**
 	 * Walk.
 	 */
-	private void walk() {
+	private String walk() {
+		String value= "Dog is walking fours...";
 		System.out.println("Dog is walking fours...");
+		return value;
 
 	}
 
@@ -45,8 +48,10 @@ public class Canine extends Mammal implements Communicator {
 	 * @see com.yoiset.motionpoint.domain.Communicator#communicate()
 	 */
 	@Override
-	public void communicate() {
-		System.out.println("Dog is barking...");
+	public String communicate() {
+		String value= "Dog is barking...";
+		System.out.println(value);
+		return value;
 		
 	}
 

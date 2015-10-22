@@ -12,7 +12,7 @@ public abstract class Animal {
 	/**
 	 * Locomotion. It suppose to be the way that every kind of animal will move
 	 */
-	public abstract void move();
+	public abstract String move();
 
 	/**
 	 * Gets the blood temperature of the animal.

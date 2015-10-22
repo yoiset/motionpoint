@@ -9,6 +9,6 @@ public interface Communicator {
 	/**
 	 * Communicate. Represents the mechanism of communication
 	 */
-	public void communicate();
+	public String communicate();
 
 }

@@ -16,15 +16,17 @@ public class Snake extends Reptile {
 	 * Locomotion as a snake
 	 */
 	@Override
-	public void move() {
-		drag();
+	public String move() {
+		return drag();
 	}
 
 	/**
 	 * The way of the snake move
 	 */
-	private void drag() {
-		System.out.println("Snake is dragging...");
+	private String drag() {
+		String value="Snake is dragging...";
+		System.out.println(value);
+		return value;
 	}
 
 }

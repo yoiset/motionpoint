@@ -9,5 +9,5 @@ public abstract class Mammal extends Animal {
 	/**
 	 * Jump. Available quality for all mammals 
 	 */
-	public abstract void jump();
+	public abstract String jump();
 }
