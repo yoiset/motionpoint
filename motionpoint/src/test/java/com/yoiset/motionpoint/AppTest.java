@@ -20,9 +20,11 @@ import com.yoiset.motionpoint.domain.Snake;
 public class AppTest{
 
 	private static List<Animal> animals;
-
 	private static List<Communicator> communicators;
 
+	/**
+	 * Initializing list before runs any Test 
+	 */
 	@BeforeClass
 	public static void setUpBeforeClass() {
 		animals = new ArrayList<>();
@@ -47,7 +49,7 @@ public class AppTest{
 	}
 
 	/**
-	 * Applying and checking behavioral polymorphism
+	 * Checking behavioral polymorphism
 	 */
 	@Test
 	public void testAnimal() {
@@ -69,5 +71,19 @@ public class AppTest{
 
 		}
 
+	}
+	
+	/**
+	 * Checking behavioral polymorphism
+	 */
+	@Test
+	public void testComunicator(){
+		for (Communicator comm : communicators) {
+			if(comm instanceof Human){
+				assertEquals(comm.communicate(), "Human is talking...");
+			}else if(comm instanceof Canine){
+				assertEquals(comm.communicate(), "Dog is barking...");
+			}
+		}
 	}
 }
