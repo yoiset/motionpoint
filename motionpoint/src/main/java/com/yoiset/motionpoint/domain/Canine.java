@@ -13,8 +13,7 @@ public class Canine extends Mammal implements Communicator {
 		setBloodTemperature(60);
 	}
 
-	/**
-	 * The way of a canine is going to jump
+	/** The way of a canine is going to jump
 	 * @see com.yoiset.motionpoint.domain.Mammal#jump()
 	 */
 	@Override

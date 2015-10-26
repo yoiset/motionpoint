@@ -56,15 +56,18 @@ public class AppTest{
 		for (Animal animal : animals) {
 			if (animal instanceof Snake) {
 				assertEquals(animal.move(), "Snake is dragging...");
+				assertEquals(animal.locomotion(), "Snake is dragging...");
 				assertEquals(animal.getBloodTemperature(), 40);
 
 			} else if (animal instanceof Canine) {
 				assertEquals(animal.move(), "Dog is walking fours...");
+				assertEquals(animal.locomotion(), "Dog is walking fours...");
 				assertEquals(((Canine) animal).jump(), "Dog is jumping...");
 				assertEquals(animal.getBloodTemperature(), 60);
 
 			} else if (animal instanceof Human){
 				assertEquals(animal.move(), "Human is walking in 2 feet");
+				assertEquals(animal.locomotion(), "Human is walking in 2 feet");
 				assertEquals(((Human) animal).jump(), "Human is jumping in 2 feet");
 				assertEquals(animal.getBloodTemperature(), 70);
 			}
