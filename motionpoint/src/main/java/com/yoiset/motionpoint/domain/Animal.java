@@ -7,7 +7,7 @@ package com.yoiset.motionpoint.domain;
 public abstract class Animal {
 
 	/** The blood temperature of the animal. */
-	protected int bloodTemperature;
+	protected int bloodTemperature; 
 
 	
 	/**
@@ -24,7 +24,7 @@ public abstract class Animal {
 	public String locomotion(){
 		return move();
 	}
-
+				
 	/**
 	 * Gets the blood temperature of the animal.
 	 *
